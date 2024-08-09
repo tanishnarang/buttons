@@ -4,10 +4,16 @@ export default function App() {
   return (
     <div>
       <Button primary>Click me!</Button>
-      <Button secondary>Press ME!</Button>
-      <Button success>hover Me!</Button>
+      <Button secondary rounded>
+        Press ME!
+      </Button>
+      <Button success outline>
+        hover Me!
+      </Button>
       <Button warning>primary</Button>
-      <Button danger>Secondary</Button>
+      <Button danger rounded>
+        Secondary
+      </Button>
     </div>
   );
 }
