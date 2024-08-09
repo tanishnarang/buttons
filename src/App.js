@@ -1,25 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import { click } from "@testing-library/user-event/dist/click";
+import Button from "./components/Button";
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Button>Click me!</Button>
+      <Button>Press ME!</Button>
+      <Button>hover Me!</Button>
+      <Button>primary</Button>
+      <Button>Secondary</Button>
     </div>
   );
 }
-
-export default App;
