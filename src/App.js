@@ -1,10 +1,18 @@
 // import { click } from "@testing-library/user-event/dist/click";
+import { GoBell } from "react-icons/go";
 import Button from "./components/Button";
 export default function App() {
+  const handleClick = () => {
+    console.log("primary button clicked");
+  };
+
   return (
     <div>
-      <Button primary>Click me!</Button>
-      <Button secondary rounded>
+      <Button primary onClick={handleClick}>
+        <GoBell className="mr-1" />
+        Click me!
+      </Button>
+      <Button secondary rounded onMouseOver={handleClick}>
         Press ME!
       </Button>
       <Button success outline>
