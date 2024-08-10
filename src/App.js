@@ -8,7 +8,7 @@ export default function App() {
 
   return (
     <div>
-      <Button primary onClick={handleClick}>
+      <Button primary onClick={handleClick} className={"mb-5"}>
         <GoBell className="mr-1" />
         Click me!
       </Button>
