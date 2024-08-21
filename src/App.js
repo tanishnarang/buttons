@@ -1,27 +1,22 @@
-// import { click } from "@testing-library/user-event/dist/click";
-import { GoBell } from "react-icons/go";
-import Button from "./components/Button";
+import Accordion from "./components/Accordion";
 export default function App() {
-  const handleClick = () => {
-    console.log("primary button clicked");
-  };
+  const items = [
+    {
+      label: "Can i use React in my project",
+      content:
+        "yes we can the react in our project.yes we can the react in our project.yes we can the react in our project.yes we can the react in our project.",
+    },
+    {
+      label: "Can i use JavaScript in my project",
+      content:
+        "yes we can the react in our project.yes we can the react in our project.yes we can the react in our project.yes we can the react in our project.",
+    },
+    {
+      label: "Can i use CSS in my project",
+      content:
+        "yes we can the react in our project.yes we can the react in our project.yes we can the react in our project.yes we can the react in our project.",
+    },
+  ];
 
-  return (
-    <div>
-      <Button primary onClick={handleClick} className={"mb-5"}>
-        <GoBell className="mr-1" />
-        Click me!
-      </Button>
-      <Button secondary rounded onMouseOver={handleClick}>
-        Press ME!
-      </Button>
-      <Button success outline>
-        hover Me!
-      </Button>
-      <Button warning>primary</Button>
-      <Button danger rounded>
-        Secondary
-      </Button>
-    </div>
-  );
+  return <Accordion items={items} />;
 }
